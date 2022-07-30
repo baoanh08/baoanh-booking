@@ -1,27 +1,27 @@
 export const NAVBARITEM = [
   {
     type: "Stays",
-    icon: "fa-bed",
+    icon: "fa fa-bed",
     active: true
   },
   {
     type: "Flights",
-    icon: "fa-plane",
+    icon: "fa fa-plane",
     active: false
   },
   {
     type: "Car rentals",
-    icon: "fa-car",
+    icon: "fa fa-car",
     active: false
   },
   {
     type: "Attractions",
-    icon: "fa-bed",
+    icon: "fa fa-bed",
     active: false
   },
   {
     type: "Airport taxis",
-    icon: "fa-taxi",
+    icon: "fa fa-taxi",
     active: false
   }
 ];

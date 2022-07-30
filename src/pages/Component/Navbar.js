@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { NAVBARITEM } from "../../../data/navbar";
 import NavBarItem from "./NavBarItem";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const [Item, setItem] = useState(NAVBARITEM);
+
   return (
     <div>
       <div>
@@ -21,7 +25,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <NavBarItem />
+      <NavBarItem Item={Item} />
     </div>
   );
 }
