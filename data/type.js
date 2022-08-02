@@ -1,4 +1,4 @@
-[
+export const TYPE=[
 	{
 		"name": "Hotels",
 		"count": 233,
