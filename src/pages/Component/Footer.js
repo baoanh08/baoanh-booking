@@ -6,10 +6,11 @@ class Footer extends React.Component {
     super(props);
     this.state = FOOTER;
   }
-
   render() {
     const footerRender = FOOTER.map((col) => {
-      return <div>{col.col_values.join()}</div>;
+      return col.col_values.map((val) => {
+        return <div>{val}</div>;
+      });
     });
     return footerRender;
   }
