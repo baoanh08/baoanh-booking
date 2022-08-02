@@ -1,4 +1,4 @@
-[
+export const FOOTER=[
 	{
 		"col_number": 1,
 		"col_values": [

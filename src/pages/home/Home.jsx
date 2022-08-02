@@ -4,8 +4,8 @@ import Hotel from "../Component/Hotel";
 import Header from "../Component/Header";
 import Navbar from "../Component/Navbar";
 import React from "react";
-import ReactDOM from "react-dom/client";
 import FormDK from "../Component/FormDK";
+import Footer from "../Component/Footer";
 const Home = () => {
   return (
     <div>
@@ -25,6 +25,7 @@ const Home = () => {
         <Hotel />
       </div>
       <FormDK />
+      <Footer />
     </div>
   );
 };
