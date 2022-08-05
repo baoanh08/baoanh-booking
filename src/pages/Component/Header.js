@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+function handleSubmit(e) {
+  e.preventDefault();
+  window.location.replace("/search");
+}
 export default function Header() {
   return (
     <div>
@@ -24,7 +28,7 @@ export default function Header() {
           <label>
             <input type="text" placeholder="2 adults 0children 1room" />
           </label>
-          <buton>Search</buton>
+          <button onClick={handleSubmit}>Search</button>
         </form>
       </div>
     </div>
