@@ -1,29 +1,20 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NAVBARITEM } from "../../../data/navbar";
 import NavBarItem from "./NavBarItem";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Navbar(props) {
-  const [Item, setItem] = useState(NAVBARITEM);
+  const Item = NAVBARITEM;
 
   return (
-    <div>
-      <div>
-        <Link to="/">Booking Website</Link>
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <Link to="/" className="navbar-brand">
+          Booking Website
+        </Link>
       </div>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">
-              <button>Register</button>
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <button>Login</button>
-            </Link>
-          </li>
-        </ul>
+      <div className="nav navbar-nav navbar-right">
+        <button>Register</button>
+        <button>Login</button>
       </div>
       <NavBarItem Item={Item} />
     </div>
