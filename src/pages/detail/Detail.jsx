@@ -1,7 +1,9 @@
-const Detail = () => {
+import DetailItem from "../Component/detail/DetailItem";
+
+const Detail = (props) => {
   return (
     <div>
-      <h1>Detail Page</h1>
+      <DetailItem />
     </div>
   );
 };
