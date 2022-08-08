@@ -1,5 +1,6 @@
 import React from "react";
 import { HOTEL } from "../../../data/hotel_list";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class Hotel extends React.Component {
   constructor(props) {
@@ -9,8 +10,8 @@ class Hotel extends React.Component {
   render() {
     const hotelRender = HOTEL.map((hotel) => {
       return (
-        <div>
-          <img src={hotel.image_url}></img>
+        <div className="col-4">
+          <img className="w-25%" src={hotel.image_url}></img>
           <h1>{hotel.name}</h1>
           <p>{hotel.city}</p>
           <p>Starting From ${hotel.price}</p>

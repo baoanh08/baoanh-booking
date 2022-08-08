@@ -9,7 +9,10 @@ class City extends React.Component {
   render() {
     const cityRender = CITY.map((city) => {
       return (
-        <div style={{ backgroundImage: `url(${city.image})` }}>
+        <div
+          className="col-4"
+          style={{ backgroundImage: `url(${city.image})` }}
+        >
           <h2>{city.name}</h2>
           <p>{city.subText}</p>
         </div>

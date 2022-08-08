@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function handleSubmit(e) {
   e.preventDefault();
   window.location.replace("/search");
@@ -13,11 +13,13 @@ export default function Header() {
         a free acount
       </p>
       <div>
-        <buton>
-          <Link to="/">Sign in/Register</Link>
+        <buton className=" text-white btn btn-primary btn-lg">
+          <a className="text-white" href="#">
+            Sign in/Register
+          </a>
         </buton>
       </div>
-      <div>
+      <div className="border border-5 border-warning">
         <form>
           <label>
             <input type="text" placeholder="Where are you going" />

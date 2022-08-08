@@ -11,21 +11,25 @@ const Home = () => {
     <div>
       <Navbar />
       <Header />
-      <City />
+      <div className="row">
+        <City />
+      </div>
       <div>
         <h1>Browse by property type</h1>
-        <Type />
+        <div className="row">
+          <Type />
+        </div>
       </div>
       <div>
         <h1>Homes guests love</h1>
-        <Hotel />
-      </div>
-      <div>
-        <h1>Homes guests love</h1>
-        <Hotel />
+        <div className="row">
+          <Hotel />
+        </div>
       </div>
       <FormDK />
-      <Footer />
+      <div className="row">
+        <Footer />
+      </div>
     </div>
   );
 };

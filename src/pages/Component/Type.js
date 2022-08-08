@@ -9,7 +9,7 @@ class Type extends React.Component {
   render() {
     const typeRender = TYPE.map((type) => {
       return (
-        <div>
+        <div className="col-3">
           <img src={type.image}></img>
           <h2>{type.name}</h2>
           <p>{type.count} hotels</p>
