@@ -3,29 +3,39 @@ import { NAVBARITEM } from "../../../data/navbar";
 import NavBarItem from "./NavBarItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
+import { Styles } from "./module.css";
+
 export default function Navbar(props) {
   const Item = NAVBARITEM;
 
   return (
-    <div className="container-fluid bg-primary text-white">
+    <div style={{ background: "#003580" }} className="container-fluid">
       <div className="row">
         <div className="col-6 col-sm-9">
-          <Link to="/" className="navbar-brand">
+          <a
+            href="#"
+            style={{
+              textDecoration: "none",
+              flexGrow: 1,
+              marginBottom: 3,
+              color: "white"
+            }}
+          >
             Booking Website
-          </Link>
+          </a>
         </div>
         <div className="col-6 col-sm-3">
           <div className="row">
-            <div className="col-6">
+            <div className="col-3 signButton">
               <button>Register</button>
             </div>
-            <div className="col-6">
+            <div className="col-3 signButton">
               <button>Login</button>
             </div>
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-sm bg-dark">
+      <nav class="navbar navbar-expand-sm col-6">
         <div className="container">
           <NavBarItem Item={Item} />{" "}
         </div>

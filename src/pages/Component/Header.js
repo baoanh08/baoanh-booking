@@ -6,8 +6,10 @@ function handleSubmit(e) {
 }
 export default function Header() {
   return (
-    <div>
-      <h1>A Lifetime of discounts? It's Genius</h1>
+    <div style={{ background: "#003580", height: "25vh", color: "white" }}>
+      <h1>
+        <strong>A Lifetime of discounts? It's Genius</strong>
+      </h1>
       <p>
         Get rewarded for your travels-unclock instant saving of 10% or more with
         a free acount
@@ -19,7 +21,10 @@ export default function Header() {
           </a>
         </buton>
       </div>
-      <div className="border border-5 border-warning">
+      <div
+        style={{ display: "flex", alignItems: "center", width: "70%" }}
+        className="border border-5 border-warning"
+      >
         <form>
           <label>
             <input type="text" placeholder="Where are you going" />
