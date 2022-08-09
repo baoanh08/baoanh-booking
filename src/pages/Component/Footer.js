@@ -8,13 +8,15 @@ class Footer extends React.Component {
   }
   render() {
     const footerRender = FOOTER.map((col) => {
+      // return col.col_values.map((val) => {
       return (
-        <div ClassName="col-4">
-          {col.col_values.map((val) => {
-            return <div>{val}</div>;
-          })}
+        <div style={{ width: "20%" }} className="footercol">
+          <a className="footerlink" href="#">
+            {col.col_values}
+          </a>
         </div>
       );
+      // });
     });
     return footerRender;
   }

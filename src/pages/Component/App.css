@@ -114,3 +114,17 @@
   border-radius: 5px;
   padding: 10px 30px;
 }
+.footercol {
+  display: flex;
+  gap: 3rem;
+  font-size: 20px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+.footerlink {
+  text-decoration: none;
+  margin-left: 3%;
+  color: rgb(0, 158, 220);
+  font-size: 15px;
+  font-weight: 400;
+}
