@@ -1,7 +1,7 @@
 import React from "react";
 import { CITY } from "../../../data/city";
 
-import { Styles } from "./module.css";
+import "./App.css";
 
 class City extends React.Component {
   constructor(props) {
@@ -11,9 +11,10 @@ class City extends React.Component {
   render() {
     const cityRender = CITY.map((city) => {
       return (
-        <div className="Styles.citythree col-4">
-          <div className="Styles.manchester">
-            <img scr={city.image}></img>
+        <div className="col-4 citythree">
+          <div className="manchester">
+            <img scr="./images/city_2.webp" alt="citis"></img>
+            console.log({city.image});
             <h2>{city.name}</h2>
             <p>{city.subText}</p>
           </div>

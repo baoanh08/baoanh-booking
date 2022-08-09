@@ -1,5 +1,6 @@
 import React from "react";
 import { TYPE } from "../../../data/type";
+import "./App.css";
 
 class Type extends React.Component {
   constructor(props) {
@@ -9,10 +10,13 @@ class Type extends React.Component {
   render() {
     const typeRender = TYPE.map((type) => {
       return (
-        <div className="col-3">
-          <img src={type.image}></img>
-          <h2>{type.name}</h2>
-          <p>{type.count} hotels</p>
+        <div style={{ width: "20%", position: "relative" }} className="col-2">
+          <img className="browsimg rounded" src={type.image}></img>
+
+          <div className="diver">
+            <h4 className="subhead">{type.name}</h4>
+            <p className="bbrowssub">{type.count} hotels</p>
+          </div>
         </div>
       );
     });

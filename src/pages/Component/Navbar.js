@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
 import { NAVBARITEM } from "../../../data/navbar";
 import NavBarItem from "./NavBarItem";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./Header";
-import { Styles } from "./module.css";
+import "./App.css";
 
 export default function Navbar(props) {
   const Item = NAVBARITEM;
@@ -26,11 +24,11 @@ export default function Navbar(props) {
         </div>
         <div className="col-6 col-sm-3">
           <div className="row">
-            <div className="col-3 signButton">
-              <button>Register</button>
+            <div className="col-3">
+              <button className="signButton">Register</button>
             </div>
-            <div className="col-3 signButton">
-              <button>Login</button>
+            <div className="col-3">
+              <button className="signButton">Login</button>
             </div>
           </div>
         </div>
