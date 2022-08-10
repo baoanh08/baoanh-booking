@@ -11,12 +11,11 @@ class City extends React.Component {
   render() {
     const cityRender = CITY.map((city) => {
       return (
-        <div className="col-4 citythree">
-          <div className="manchester">
-            <img scr="./images/city_2.webp" alt="citis"></img>
-            console.log({city.image});
-            <h2>{city.name}</h2>
-            <p>{city.subText}</p>
+        <div className="col-4 ">
+          <div style={{ position: "relative", color: "white" }}>
+            <img src={city.image} alt="citis"></img>
+            <h2 className="namecity">{city.name}</h2>
+            <p className="subtextciti">{city.subText}</p>
           </div>
         </div>
       );

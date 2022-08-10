@@ -7,8 +7,11 @@ export default function Navbar(props) {
   const Item = NAVBARITEM;
 
   return (
-    <div style={{ background: "#003580" }} className="container-fluid">
-      <div className="row">
+    <div
+      style={{ background: "#003580", height: "100px" }}
+      className="container-fluid"
+    >
+      <div className="row" style={{ height: "50px" }}>
         <div className="col-6 col-sm-9">
           <a
             href="#"

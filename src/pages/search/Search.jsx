@@ -6,7 +6,7 @@ import SearchListItem from "../Component/search/SearchListItem";
 
 const Search = () => {
   return (
-    <div>
+    <div className="row">
       <SearchPopup />
       <SearchListItem />
     </div>
