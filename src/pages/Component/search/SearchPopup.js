@@ -1,21 +1,27 @@
 const SearchPopup = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "orange" }}>
       <form>
         <h1>Search</h1>
         <p>Destination</p>
         <label>
-          <input type="text" />
+          <input type="text" className="footerinputBox" />
         </label>
         <p>Check-in Date</p>
         <label>
-          <input type="date" />
+          <input type="date" className="footerinputBox" />
         </label>
         <p>Option</p>
-        <p>Min price per night</p>
-        <label>
-          <input type="number" />
-        </label>
+        <div className="row">
+          <div style={{ width: "70%" }}>
+            <p>Min price per night</p>
+          </div>
+          <div style={{ width: "30%" }}>
+            <label>
+              <input type="number" style={{ width: "100%" }} />
+            </label>
+          </div>
+        </div>
         <p>Max price per night</p>
         <label>
           <input type="number" />

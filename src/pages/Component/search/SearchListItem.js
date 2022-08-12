@@ -1,5 +1,22 @@
 import { SEARCHLISTITEM } from "../../../../data/search";
 import React from "react";
+import "../App.css";
+import styled from "styled-components";
+const Rate = styled.p`
+  padding: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  background: #003580;
+  color: #fff;
+  border-radius: 5.09091px 5.09091px 5.09091px 0;
+`;
+const E = styled.p`
+  font-size: 14px;
+  color: #262626;
+  font-weight: 500;
+  line-height: 1;
+`;
 
 class SearchListItem extends React.Component {
   constructor(props) {
@@ -10,22 +27,51 @@ class SearchListItem extends React.Component {
     const SearchRender = SEARCHLISTITEM.map((item) => {
       return (
         <div>
-          <div>
-            <img src={item.image_url}></img>
-          </div>
-          <div>
-            <h1>{item.name}</h1>
-            <p>{item.distance}</p>
-            <p>{item.tag}</p>
-            <p>{item.description}</p>
-            <p>{item.type}</p>
-            <p>{item.free_cancel}</p>
-            <div>{item.rate_text} </div>
-            <div>{item.rate}</div>
-            <div>${item.price}</div>
-            <div>
-              <p>Inclues taxes and fees</p>
-              <button>See Availability</button>
+          <div className="row">
+            <div className="hotle" style={{ width: "20%" }}>
+              <img src={item.image_url}></img>
+            </div>
+            <div style={{ width: "80%" }}>
+              <div className="row">
+                <div style={{ width: "65%" }}>
+                  <strong>
+                    <h4 style={{ color: "rgb(0, 158, 220)" }}>{item.name}</h4>
+                  </strong>
+                </div>
+
+                <div style={{ width: "20%" }}>
+                  <strong>{item.rate_text} </strong>
+                </div>
+                <Rate style={{ width: "10%" }}>{item.rate}</Rate>
+              </div>
+
+              <p>{item.distance} from center</p>
+              <Rate>{item.tag}</Rate>
+              <p>
+                <strong>{item.description}</strong>
+              </p>
+              <div className="row">
+                <div style={{ width: "70%" }}>
+                  <p>{item.type}</p>
+
+                  {item.free_cancel ? (
+                    <p>
+                      Freecancell <br />
+                      You can cancell later, so look in this great today!
+                    </p>
+                  ) : (
+                    <p></p>
+                  )}
+                </div>
+
+                <div style={{ width: "30%" }}>
+                  <h1>${item.price}</h1>
+                  <p>Inclues taxes and fees</p>
+                  <Rate>
+                    <button>See Availability</button>
+                  </Rate>
+                </div>
+              </div>
             </div>
           </div>
         </div>

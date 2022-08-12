@@ -7,8 +7,12 @@ import SearchListItem from "../Component/search/SearchListItem";
 const Search = () => {
   return (
     <div className="row">
-      <SearchPopup />
-      <SearchListItem />
+      <div style={{ width: "30%" }}>
+        <SearchPopup />
+      </div>
+      <div style={{ width: "70%" }}>
+        <SearchListItem />
+      </div>
     </div>
   );
 };
