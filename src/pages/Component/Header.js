@@ -10,7 +10,7 @@ export default function Header() {
       style={{
         position: "static",
         background: "#003580",
-        height: "30vh",
+        // height: "80vh",
         color: "white"
       }}
     >

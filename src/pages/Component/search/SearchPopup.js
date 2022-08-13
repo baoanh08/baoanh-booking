@@ -16,29 +16,56 @@ const SearchPopup = () => {
           <div style={{ width: "70%" }}>
             <p>Min price per night</p>
           </div>
-          <div style={{ width: "30%" }}>
+          <div style={{ width: "25%" }}>
             <label>
               <input type="number" style={{ width: "100%" }} />
             </label>
           </div>
         </div>
-        <p>Max price per night</p>
-        <label>
-          <input type="number" />
-        </label>
-        <p>Adult</p>
-        <label>
-          <input type="number" />
-        </label>
-        <p>Children</p>
-        <label>
-          <input type="number" />
-        </label>
-        <p>Room</p>
-        <label>
-          <input type="number" />
-        </label>
-        <button>Search</button>
+        <div className="row">
+          <div style={{ width: "70%" }}>
+            <p>Max price per night</p>
+          </div>
+          <div style={{ width: "25%" }}>
+            <label>
+              <input type="number" style={{ width: "100%" }} />
+            </label>
+          </div>
+        </div>
+        <div className="row">
+          <div style={{ width: "70%" }}>
+            <p>Adult</p>
+          </div>
+          <div style={{ width: "25%" }}>
+            <label>
+              <input type="number" style={{ width: "100%" }} />
+            </label>
+          </div>
+        </div>
+        <div className="row">
+          <div style={{ width: "70%" }}>
+            <p>Children</p>
+          </div>
+          <div style={{ width: "25%" }}>
+            <label>
+              <input type="number" style={{ width: "100%" }} />
+            </label>
+          </div>
+        </div>
+        <div className="row">
+          <div style={{ width: "70%" }}>
+            <p>Room</p>
+          </div>
+          <div style={{ width: "25%" }}>
+            <label>
+              <input type="number" style={{ width: "100%" }} />
+            </label>
+          </div>
+        </div>
+
+        <button className="footerbtn" style={{ width: "90%" }}>
+          Search
+        </button>
       </form>
     </div>
   );

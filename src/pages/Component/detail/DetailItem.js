@@ -9,9 +9,11 @@ class DetailItem extends React.Component {
   render() {
     const photo = DETAIL.photos.map((i) => <img src={i}></img>);
     return (
-      <div>
+      <div style={{ margin: "auto", width: "60%" }}>
         <div>
-          <h1>{DETAIL.name}</h1>
+          <h1>
+            <strong>{DETAIL.name}</strong>
+          </h1>
           <p>{DETAIL.addess}</p>
           <p>{DETAIL.distance}</p>
           <p>{DETAIL.price}</p>
