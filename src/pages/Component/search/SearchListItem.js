@@ -9,7 +9,7 @@ const Rate = styled.p`
   font-weight: 500;
   background: #003580;
   color: #fff;
-  border-radius: 5.09091px 5.09091px 5.09091px 0;
+  border-radius: 5px 5px 5px 5px;
 `;
 const E = styled.p`
   font-size: 14px;
@@ -28,10 +28,10 @@ class SearchListItem extends React.Component {
       return (
         <div>
           <div className="row">
-            <div className="hotle" style={{ width: "20%" }}>
+            <div className="hotle" style={{ width: "30%" }}>
               <img src={item.image_url}></img>
             </div>
-            <div style={{ width: "80%" }}>
+            <div style={{ width: "70%" }}>
               <div className="row">
                 <div style={{ width: "65%" }}>
                   <strong>
@@ -67,9 +67,7 @@ class SearchListItem extends React.Component {
                 <div style={{ width: "30%" }}>
                   <h1>${item.price}</h1>
                   <p>Inclues taxes and fees</p>
-                  <Rate>
-                    <button>See Availability</button>
-                  </Rate>
+                  <Rate>See Availability</Rate>
                 </div>
               </div>
             </div>

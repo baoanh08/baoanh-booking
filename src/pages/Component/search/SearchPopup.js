@@ -5,7 +5,11 @@ const SearchPopup = () => {
         <h1>Search</h1>
         <p>Destination</p>
         <label>
-          <input type="text" className="footerinputBox" />
+          <input
+            type="text"
+            className="footerinputBox"
+            style={{ width: "100%" }}
+          />
         </label>
         <p>Check-in Date</p>
         <label>
