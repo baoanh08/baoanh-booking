@@ -8,7 +8,9 @@ const Detail = (props) => {
       <Navbar />
       <DetailItem />
       <FormDK />
-      <Footer />
+      <div className="row">
+        <Footer />
+      </div>
     </div>
   );
 };

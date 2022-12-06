@@ -17,7 +17,9 @@ const Search = () => {
           <SearchListItem />
         </div>
       </div>
-      <Footer />
+      <div className="row">
+        <Footer />
+      </div>
     </div>
   );
 };
