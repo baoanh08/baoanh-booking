@@ -35,7 +35,9 @@ class SearchListItem extends React.Component {
               <div className="row">
                 <div style={{ width: "65%" }}>
                   <strong>
-                    <h4 style={{ color: "rgb(0, 158, 220)" }}>{item.name}</h4>
+                    <a href="../Detail" style={{ color: "rgb(0, 158, 220)" }}>
+                      {item.name}
+                    </a>
                   </strong>
                 </div>
 
